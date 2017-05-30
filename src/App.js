@@ -6,7 +6,19 @@ import { Alert } from './components/Alert'
 class App extends Component {
   render() {
     return (
-      <Alert />
+      <div>
+        <Alert>
+          <strong>Default Info!</strong> You successfully read this important alert message.
+        </Alert>
+
+        <Alert alertType="danger">
+          <strong>Danger Alert!</strong> You successfully read this important alert message.
+        </Alert>
+
+        <Alert alertType="warning">
+          <strong>Warning!</strong> You successfully read this important alert message.
+        </Alert>
+      </div>
     );
   }
 }
